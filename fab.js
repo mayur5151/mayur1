@@ -4,7 +4,7 @@ var app=express();
 var fabrikam=function(req,res)
 {
 	console.log("invoking rest api");
-	var product=[{id:1,name:"abc"} ,{id:2,name:"xyz"}];
+	var product=[{id:1,name:"abc"} ,{id:2,name:"xyz"},{id:3,name:"fff"}];
 	res.send(product)
 };
 app.get('/product',fabrikam);
